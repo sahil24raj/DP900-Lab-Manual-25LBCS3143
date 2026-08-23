@@ -64,11 +64,12 @@ Network access to an Azure SQL logical server is controlled by **server-level fi
 
 11. Open the SQL **server** resource's **Networking** blade (under Security). Confirm *Public network access* is set to **Selected networks**, and use **Add your client IPv4 address** (or manually **Add a firewall rule** with a Rule name, Start IP, and End IP) to allow your machine to reach the server, then **Save**.
 
-    ![Configure server firewall rules](images/lab4/Step_13.jpg)
+    ![Configure server firewall rules](images/lab4/Step_13.png)
+    ![Add firewall rule details](images/lab4/Step_13_2.png)
 
 12. On the SQL **database** resource's **Overview** page, click **Query editor (preview)** in the left-hand menu.
 
-    ![Open Query editor from the database Overview](images/lab4/Step_14.jpg)
+    ![Open Query editor from the database Overview](images/lab4/Step_14.png)
 
 13. In the Query editor sign-in screen, select the **SQL authentication** tab, enter the **Username** (`sqladmin`) and **Password** set during server creation, then click **Connect**.
 
@@ -81,7 +82,7 @@ Network access to an Azure SQL logical server is controlled by **server-level fi
 
 15. Type a `CREATE TABLE` statement (see Sample Code below) into the query tab and click **Run**. Check the **Messages** pane for the execution status ("Query executed successfully") and confirm the new table appears under **Tables** in the Explorer.
 
-    ![Running CREATE TABLE in the Query editor](images/lab4/Step_18.jpg)
+    ![Running CREATE TABLE in the Query editor](images/lab4/Step_18.png)
 
 16. Repeat step 15 to create the second table, then run basic DML queries (`INSERT`, `SELECT`, `UPDATE`, `DELETE`) to populate and query the data — see Sample Code below.
 

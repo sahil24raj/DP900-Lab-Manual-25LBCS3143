@@ -78,7 +78,7 @@ Network access to an Azure SQL logical server is controlled by **server-level fi
 
 14. Once connected, use the **Explorer** pane to browse database objects: the `dbo` schema contains **Tables**, **Views**, **Stored Procedures**, and **Functions** (Scalar / Table-valued); the **Queries** node lists saved/open SQL files. Click **New query** to open a blank SQL editor tab.
 
-    ![Query editor Explorer and toolbar](images/lab4/Step_17.jpg)
+    ![Query editor Explorer and toolbar](images/lab4/Step_14.png)
 
 15. Type a `CREATE TABLE` statement (see Sample Code below) into the query tab and click **Run**. Check the **Messages** pane for the execution status ("Query executed successfully") and confirm the new table appears under **Tables** in the Explorer.
 

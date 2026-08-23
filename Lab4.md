@@ -35,8 +35,6 @@ Network access to an Azure SQL logical server is controlled by **server-level fi
 
 4.  In the **Create SQL Database Server** panel: enter a globally unique, all-lowercase **Server name** (e.g. `streamflixdbserver`), pick the **Location** nearest to you (e.g. Central India), set **Authentication method** to *Use both SQL and Microsoft Entra authentication*, enter a **Server admin login** (e.g. `sqladmin`) and a strong **Password** (remember both), then click **OK**.
 
-    ![Configure the SQL Database server](images/lab4/Step_5.png)
-
 5.  Back on **Basics**: set *Want to use SQL elastic pool?* to **No**, *Workload environment* to **Development** (cost-optimized defaults), keep the default **Compute + storage** (General Purpose – Serverless) and **Locally-redundant backup storage**, then click **Next: Networking**.
 
     ![Basics tab — database and workload settings](images/lab4/Step_6.png)
@@ -60,8 +58,6 @@ Network access to an Azure SQL logical server is controlled by **server-level fi
 
 10. Wait for the deployment to complete, then click **Go to resource** to open the new database.
 
-    ![Deployment complete](images/lab4/Step_12.png)
-
 11. Open the SQL **server** resource's **Networking** blade (under Security). Confirm *Public network access* is set to **Selected networks**, and use **Add your client IPv4 address** (or manually **Add a firewall rule** with a Rule name, Start IP, and End IP) to allow your machine to reach the server, then **Save**.
 
     ![Configure server firewall rules](images/lab4/Step_13.png)
@@ -72,9 +68,6 @@ Network access to an Azure SQL logical server is controlled by **server-level fi
     ![Open Query editor from the database Overview](images/lab4/Step_14.png)
 
 13. In the Query editor sign-in screen, select the **SQL authentication** tab, enter the **Username** (`sqladmin`) and **Password** set during server creation, then click **Connect**.
-
-    ![Query editor login options](images/lab4/Step_15.jpg)
-    ![Signing in with SQL authentication](images/lab4/Step_16.jpg)
 
 14. Once connected, use the **Explorer** pane to browse database objects: the `dbo` schema contains **Tables**, **Views**, **Stored Procedures**, and **Functions** (Scalar / Table-valued); the **Queries** node lists saved/open SQL files. Click **New query** to open a blank SQL editor tab.
 

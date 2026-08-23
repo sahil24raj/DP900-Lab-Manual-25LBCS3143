@@ -23,16 +23,15 @@ Network access to an Azure SQL logical server is controlled by **server-level fi
 
 1.  In the Azure Portal search bar, search for **"SQL Database"** and select the **Azure SQL Database** service.
 
-    ![Search for Azure SQL Database](images/lab4/Step_1.jpg)
+    ![Search for Azure SQL Database](images/lab4/Step_1.png)
 
 2.  On the **Azure SQL \| SQL databases** blade, click **+ Create**, then choose **SQL database** from the dropdown.
 
-    ![Create SQL database](images/lab4/Step_2.jpg)
-    ![Choose SQL database option](images/lab4/Step_3.jpg)
+    ![Create SQL database](images/lab4/Step_2.png)
 
 3.  On the **Basics** tab, under *Project details*, click **Create new** for Resource group and name it (e.g. `AIML_4_SQL_RG`). Under *Database details*, set the **Database name** (e.g. `StreamFlixDB`), then click **Create new** under Server to provision a new logical server.
 
-    ![Create resource group and start server creation](images/lab4/Step_4.jpg)
+    ![Create resource group and start server creation](images/lab4/Step_4.png)
 
 4.  In the **Create SQL Database Server** panel: enter a globally unique, all-lowercase **Server name** (e.g. `streamflixdbserver`), pick the **Location** nearest to you (e.g. Central India), set **Authentication method** to *Use both SQL and Microsoft Entra authentication*, enter a **Server admin login** (e.g. `sqladmin`) and a strong **Password** (remember both), then click **OK**.
 
